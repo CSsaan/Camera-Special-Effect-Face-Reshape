@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    一般都使用线性布局，少使用相对布局-->
+
+<!--    layout_gravity：相对父元素位置-->
+<!--    layout_marginLeft：相对外边距-->
+<!--    layout_weight：剩余部分按照各自权重进行分配-->
+<!--    paddingLeft：相对内边距-->
+<!--    orientation：线性布局的方向-->
+<!--    background：背景颜色-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="0dp"
+    android:orientation="vertical">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/show_surface"
+        android:layout_width="441dp"
+        android:layout_height="570dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/teal_700" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="370dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sigmacolor_sigmacolor_sigmaspace"
+            android:layout_marginStart="15dp"
+            android:textSize="8pt" />
+        <!--            tools:layout_conversion_absoluteHeight="19dp"-->
+        <!--            tools:layout_conversion_absoluteWidth="280dp"-->
+        <!--            tools:layout_editor_absoluteX="23dp"-->
+        <!--            tools:layout_editor_absoluteY="510dp" -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_10_0_1"
+            android:textSize="8pt"
+            android:textColor="@android:color/holo_red_dark"/>
+        <!--            tools:layout_conversion_absoluteHeight="19dp"-->
+        <!--            tools:layout_conversion_absoluteWidth="74dp"-->
+        <!--            tools:layout_editor_absoluteX="303dp"-->
+        <!--            tools:layout_editor_absoluteY="510dp"-->
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp"
+        android:background="#DCD6D6" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#DCD6D6"
+        android:baselineAligned="false" />
+
+    <TextView
+        android:id="@+id/fillter"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="@string/fillter"
+        android:textSize="8pt"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0px">
+
+        <Button
+            android:id="@+id/open_close_btn"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/camera_btn_foreground" />
+
+        <Button
+            android:id="@+id/change_btn"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/change_btn_foreground" />
+
+        <Button
+            android:id="@+id/choose_btn"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/choose_btn_foreground" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/save_btn_foreground" />
+    </LinearLayout>
+
+
+</LinearLayout>
